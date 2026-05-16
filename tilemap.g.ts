@@ -1,4 +1,4 @@
-// Auto-generated code. Do not edit.
+// 자동 생성된 코드입니다. 편집하지 마십시오.
 namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const transparency16 = image.ofBuffer(hex``);
@@ -595,4 +595,4 @@ namespace myTiles {
     })
 
 }
-// Auto-generated code. Do not edit.
+// 자동 생성된 코드입니다. 편집하지 마십시오.

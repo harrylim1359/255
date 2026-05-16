@@ -8,18 +8,17 @@
         ".vscode/tasks.json",
         "README.md",
         "assets.json",
+        "images.g.jres",
+        "images.g.ts",
         "main.blocks",
         "main.ts",
         "test.ts",
         "tilemap.g.jres",
         "tilemap.g.ts",
-        "tsconfig.json",
-        "images.g.jres",
-        "images.g.ts",
-        null
+        "tsconfig.json"
     ],
     "targetVersions": {
-        "target": "1.8.23",
+        "target": "4.0.14",
         "targetId": "arcade"
     },
     "supportedTargets": [

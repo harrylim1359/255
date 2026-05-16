@@ -1,24 +1,6 @@
 namespace SpriteKind {
     export const NPC = SpriteKind.create()
 }
-controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (roomNum == 3) {
-        if (mySprite.isHittingTile(CollisionDirection.Left)) {
-            mySprite.vx += 200
-        }
-    } else {
-        if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
-            mySprite.vy += -200
-        }
-    }
-})
-controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (roomNum == 3) {
-        mySprite.vx += 250
-    } else {
-        mySprite.vy += -250
-    }
-})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (roomNum == 3) {
         if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
@@ -30,12 +12,30 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         }
     }
 })
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (roomNum == 3) {
+        if (mySprite.isHittingTile(CollisionDirection.Left)) {
+            mySprite.vx += 200
+        }
+    } else {
+        if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
+            mySprite.vy += -200
+        }
+    }
+})
 info.onCountdownEnd(function () {
     tiles.placeOnTile(mySprite, tiles.getTileLocation(14, 65))
 })
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (roomNum == 3) {
+        mySprite.vx += 250
+    } else {
+        mySprite.vy += -250
+    }
+})
 let mySprite: Sprite = null
 let roomNum = 0
-let ENDED = 1
+let ENDED = 0
 roomNum = 0
 mySprite = sprites.create(img`
     . . . . . . f f f f . . . . . . 
